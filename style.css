@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    background-color: #DDE4E8;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #2A606F;
+}
+
+.header-menu a{
+    color: white;
+    padding: 7px 10px;
+    margin: 0 5px;
+    background-color: #2A606F;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+header a{
+    color: #6c3005;
+    padding: 7px 10px;
+    background-color: #F3A160;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+nav{
+    display: flex;
+    background-color: #E9EEEF;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 15px;
+    border-top: solid 2px #2A606F;
+}
+
+nav a{
+    color: #2A606F;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.hero-section{
+    background-image: url("images/Background1.avif");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+.hero-section .first{
+    display: inline-block;
+    background-color: #F3A160;
+    padding: 10px;
+    color: #6c3005;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
