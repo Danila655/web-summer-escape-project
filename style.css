@@ -1,7 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
+    color: #2A606F;
 }
 
 * {
@@ -12,7 +11,92 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
+
+
+section {
+    padding: 60px 30px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.section-intro {
+    font-weight: bold;
+    color: #2A606F;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #003544;
+}
+
+.section-description {
+    color: grey;
+}
+
+.how-to-spend-summer-section,
+.compare-offers-section {
+    background-color: #F3FAFF;
+}
+
+.popular-destinations-section,
+.contact-section {
+    background-color: #E6F6FF;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-orange {
+    background-color: #F3A160;
+    color: #0A242B;
+}
+
+.btn-blue {
+    background-color: #2A606F;
+    color: white;
+}
+
+.btn-transparent {
+    background-color: rgba(214, 210, 210, 0.37);
+    color: white;
+}
+
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.badge-lightorange {
+    background-color: #FFDCC4;
+    color: #6c3005;
+}
+
+.badge-white {
+    background-color: #DFE8EA;
+    color: #2A606F;
+    padding: 15px 20px;
+}
+
+.badge-blue {
+    background-color: lightblue;
+    color: #2A606F;
+    padding: 6px 14px;
+}
+
 
 header {
     display: flex;
@@ -22,28 +106,11 @@ header {
     align-items: center;
 }
 
-header p {
+.header-logo {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
     color: #2A606F;
-}
-
-.header-menu a {
-    color: white;
-    padding: 5px 15px;
-    background-color: #2A606F;
-    border-radius: 15px;
-    font-weight: bold;
-}
-
-header a {
-    color: #6c3005;
-    padding: 7px 10px;
-    background-color: #F3A160;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    font-weight: bold;
 }
 
 
@@ -63,19 +130,23 @@ nav {
     padding: 12px;
 }
 
-nav a {
-    color: #2A606F;
+.nav-title {
     font-weight: bold;
+    font-size: large;
+}
+
+
+nav a{
+    padding: 2px 7px;
+    border-radius: 20px;
+
+    transition: background-color 0.3s ease;
 }
 
 
 
 
-
-
-
-
-.hero-section {
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,58 +159,32 @@ nav a {
 }
 
 
-.hero-section .first {
-    background-color: #fad0ae;
-    padding: 7px 10px;
-    color: #6c3005;
-    border-radius: 15px;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.hero-section h1 {
+.hero-title {
     font-weight: 900;
     font-size: 40px;
     color: white;
 }
 
-
-.second {
+.hero-description {
     color: lightblue;
 }
 
-
-.flex-hero-div {
+.hero-actions {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.hero-buttons {
-    color: white;
-    background-color: rgba(214, 210, 210, 0.37);
 
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 
-
-
-.description-spans {
-    font-weight: bold;
-    color: #2A606F;
-    background-color: #DDE4E8;
-
-    border-radius: 30px;
-    padding: 20px;
-
-
-}
 
 
 
@@ -149,67 +194,107 @@ nav a {
 
 .how-to-spend-summer-section {
     display: flex;
-    background-color: #E9EEEF;
-    padding: 60px 30px;
+    gap: 20px;
 }
 
 
-.advices-div {
-    width: 60%;
+.content-div {
+    flex: 3;
 }
 
-
-.wstep {
+.gap-20 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 30px;
+    gap: 20px;
 }
 
-.wstep .introducion {
-    font-weight: bold;
-    color: #2A606F;
-}
 
-.what-to-do {
-    margin-top: 20px;
+.card-info {
     padding: 20px;
     background-color: white;
     border-radius: 15px;
 }
 
-.what-to-do div {
+.card-info-header {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
-    color: #2A606F;
-    font-weight: bold;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.what-to-do div span {
-    background-color: lightblue;
-    color: rgb(102, 132, 233);
-    border-radius: 15px;
-    font-size: 0.9rem;
-    padding: 5px 12px;
-}
 
-.example-image-div {
-    align-self: stretch;
-    width: 40%;
+
+.banner-div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     background-image: linear-gradient(rgba(27, 72, 124, 0.3), rgba(27, 72, 124, 0.3)), url("images/beach.jpg");
     background-size: cover;
     background-position: center;
 
-}
-.example-image-div .citate{
-    font-size: 1.2rem;
+    padding: 30px;
+    gap: 15px;
+
+    
+    border-radius: 15px;
+
     font-weight: bold;
+}
+
+.banner-quote {
+    font-size: 1.5rem;
+    font-style: italic;
     color: white;
 }
 
-.example-image-div div{
+.banner-info {
     display: flex;
     justify-content: space-between;
+}
+
+.banner-author {
+    color: lightblue;
+}
+
+.banner-location {
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav a:hover{
+    background-color: #B4FFF2;
+}
+
+
+
+
+tr:hover {
+    background-color: lightblue;
 }
