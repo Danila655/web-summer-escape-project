@@ -1,45 +1,43 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+header {
     display: flex;
     background-color: #DDE4E8;
-    padding: 15px;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
 }
 
-header p{
+header p {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
     color: #2A606F;
 }
 
-.header-menu a{
+.header-menu a {
     color: white;
-    padding: 7px 10px;
-    margin: 0 5px;
+    padding: 5px 15px;
     background-color: #2A606F;
     border-radius: 15px;
-    font-size: 0.85rem;
     font-weight: bold;
 }
 
-header a{
+header a {
     color: #6c3005;
     padding: 7px 10px;
     background-color: #F3A160;
@@ -55,16 +53,17 @@ header a{
 
 
 
-nav{
+nav {
     display: flex;
-    background-color: #E9EEEF;
     align-items: center;
+    background-color: #E9EEEF;
     gap: 20px;
-    padding: 0px 15px;
     border-top: solid 2px #2A606F;
+
+    padding: 12px;
 }
 
-nav a{
+nav a {
     color: #2A606F;
     font-weight: bold;
 }
@@ -76,21 +75,141 @@ nav a{
 
 
 
-.hero-section{
-    background-image: url("images/Background1.avif");
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Background1.avif");
     background-size: cover;
     background-position: center;
-    padding: 100px 0;
-    text-align: center;
+    padding: 200px 100px;
 }
 
 
-.hero-section .first{
-    display: inline-block;
-    background-color: #F3A160;
-    padding: 10px;
+.hero-section .first {
+    background-color: #fad0ae;
+    padding: 7px 10px;
     color: #6c3005;
     border-radius: 15px;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
+.hero-section h1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+}
+
+
+.second {
+    color: lightblue;
+}
+
+
+.flex-hero-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-buttons {
+    color: white;
+    background-color: rgba(214, 210, 210, 0.37);
+
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+
+.description-spans {
+    font-weight: bold;
+    color: #2A606F;
+    background-color: #DDE4E8;
+
+    border-radius: 30px;
+    padding: 20px;
+
+
+}
+
+
+
+
+
+
+
+.how-to-spend-summer-section {
+    display: flex;
+    background-color: #E9EEEF;
+    padding: 60px 30px;
+}
+
+
+.advices-div {
+    width: 60%;
+}
+
+
+.wstep {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.wstep .introducion {
+    font-weight: bold;
+    color: #2A606F;
+}
+
+.what-to-do {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.what-to-do div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #2A606F;
+    font-weight: bold;
+}
+
+.what-to-do div span {
+    background-color: lightblue;
+    color: rgb(102, 132, 233);
+    border-radius: 15px;
+    font-size: 0.9rem;
+    padding: 5px 12px;
+}
+
+.example-image-div {
+    align-self: stretch;
+    width: 40%;
+
+    background-image: linear-gradient(rgba(27, 72, 124, 0.3), rgba(27, 72, 124, 0.3)), url("images/beach.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.example-image-div .citate{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.example-image-div div{
+    display: flex;
+    justify-content: space-between;
+}
